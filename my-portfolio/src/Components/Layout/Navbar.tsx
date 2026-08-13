@@ -15,7 +15,7 @@ export default function Navbar() {
   const isScroll = useNavbarScroll(30);
   return (
     <header
-      className={`w-full overflow-hidden  sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full   sticky top-0 z-50 transition-all duration-300 ${
         isScroll ? "bg-background/60 backdrop-blur-sm shadow-md border-b  " : ""
       } `}
     >
@@ -24,7 +24,7 @@ export default function Navbar() {
           {/* <img src={logo} alt="" className="w-50 h-20 p-1" />  */}
 
           <motion.h1
-            {...FadeLeft(0)}
+            {...FadeLeft(0.3)}
             className="text-2xl font-bold tracking-tight hover:scale-105 duration-300 transition-all"
           >
             <div className="text-3xl relative">
@@ -36,11 +36,11 @@ export default function Navbar() {
                     </motion.h1>
 
           {/* Ullllllllllllllllllllllll */}
-          <motion.ul
+          <motion.ul 
             {...fadeUp(0.3)}
-            className=" items-center md:text-lg lg:text-xl
+            className="  items-center md:text-lg lg:text-xl z-20
           gap-4  lg:gap-7 
-          hidden lg:flex
+          hidden lg:flex 
           "
           >
             <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
