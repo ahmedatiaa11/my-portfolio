@@ -3,7 +3,7 @@ import Container from "../Common/Container";
 
 export default function Footer() {
   return (
-    <section className="">
+    <footer className="">
       <Container>
         <div 
         className="w-full  flex flex-col lg:flex-row justify-between items-center rounded-full mt-6 p-5 gap-3">
@@ -12,7 +12,7 @@ export default function Footer() {
                     <p className=" hidden lg:block absolute w-40 -bottom-3  text-black/55">Frontend Developer</p>
 
           </div>
-          
+
         <ul className=" flex gap-5 text-lg ">
           <li className="hover:bg-cyan-700 hover:text-white transition-all duration-200 px-3 py- rounded-2xl "> <a  href="#home">Home</a></li>
           <li> <a  href="#about">About</a></li>
@@ -23,7 +23,7 @@ export default function Footer() {
           <a
           target="_blank" 
           href="https://www.instagram.com/ahmed3ttiaa">
-                      <FaInstagram className="w-6 h-6 text-red-600"/> 
+                      <FaInstagram className="w-6 h-6 text-red-600 hover:scale-125 "/> 
 
           </a>
           <a
@@ -48,6 +48,6 @@ export default function Footer() {
         </div>
 
       </Container>
-    </section>
+    </footer>
   );
 }
