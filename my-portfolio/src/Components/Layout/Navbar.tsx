@@ -43,39 +43,40 @@ export default function Navbar() {
           hidden lg:flex 
           "
           >
-            <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
+            <li className=" hover:scale-103    duration-300 transition-all  rounded-2xl px-2 block">
               <a
                 href="#home"
-                className="   transition-colors hover:text-primary"
+                className="    transition-all hover:text-cyan-700"
               >
                 Home
               </a>
             </li>
-            <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
-              <a href="#about" className="transition-colors hover:text-primary">
-                About
+            <li className="  hover:scale-103  duration-300 transition-all hover: rounded-2xl px-2 block">
+              <a href="#about"
+                className="    transition-all hover:text-cyan-700">
+                  About 
               </a>
             </li>
-            <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
+            <li className=" hover:scale-103    duration-300 transition-all  rounded-2xl px-2 block">
               <a
                 href="#skills"
-                className="transition-colors hover:text-primary"
+                className="    transition-all hover:text-cyan-700"
               >
                 Skills
               </a>
             </li>
-             <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
+            <li className=" hover:scale-103    duration-300 transition-all  rounded-2xl px-2 block">
               <a
                 href="#projects"
-                className="transition-colors hover:text-primary"
+                className="    transition-all hover:text-cyan-700"
               >
                 Projects
               </a>
             </li>
-            <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
+            <li className=" hover:scale-103    duration-300 transition-all  rounded-2xl px-2 block">
               <a
                 href="#contact"
-                className="transition-colors hover:text-primary"
+                className="    transition-all hover:text-cyan-700"
               >
                 Contact
               </a>
@@ -90,7 +91,7 @@ export default function Navbar() {
                 download="AHMED-ATTIA-CV.pdf"
                 className="flex   justify-center gap-2  items-center w-full "
               >
-                <ArrowDownToLine className="h-5 w-5 group-hover:rotate-360 transition-all duration-500" /> <span>Download CV</span>
+                <ArrowDownToLine className="h-5 w-5 group-hover:rotate-360 group-hover:text-cyan-600 transition-all duration-500" /> <span>Download CV</span>
               </a>
             </Button>
           </motion.div>

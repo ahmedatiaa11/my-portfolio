@@ -5,15 +5,16 @@ import { LocationEdit, Mail } from "lucide-react";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import ContactForm from "../Contact/ContactForm";
 import { useState } from "react";
+import { fadeUp } from "../../animations/FadeUp";
 
 export default function Contact() {
   const [activeCard, setactiveCard] = useState<number>();
   return (
     <motion.section id="contact" className="py-10">
       <Container>
-        <motion.div className="flex flex-col items-center gap-2 ">
-          <motion.h2 className="text-5xl font-bold"> Contact</motion.h2>
-          <motion.p className="text-lg text-muted-foreground ">
+        <motion.div  className="flex flex-col items-center gap-2 ">
+          <motion.h2 {...fadeUp(0)}  className="text-5xl font-bold"> Contact</motion.h2>
+          <motion.p {...fadeUp(.2)} className="text-lg text-muted-foreground ">
             {" "}
             Let's build something together{" "}
           </motion.p>
@@ -21,15 +22,13 @@ export default function Contact() {
 
         <motion.div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20  ">
           <motion.div className="c-info my-10  p- text-center flex flex-col gap-5 ">
-            <motion.div>
-              <h3 className="text-2xl text-muted-foreground">Get In Touch</h3>
-              {/* <p> I'm currently looking for internship and full-time opportunities.
-Whether you have a project, a job opportunity, or just want to connect,
-I'd be happy to hear from you. </p> */}
+            <motion.div {...fadeUp(0.2)}>
+              <h3  className="text-2xl text-muted-foreground">Get In Touch</h3>
+              
             </motion.div>
             <motion.div className="cards flex flex-col gap-5">
 
-              <motion.a
+              <motion.a {...fadeUp(0.2)}
                 href="https://mail.google.com/mail/?view=cm&to=ahmedattia1520@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -43,7 +42,7 @@ I'd be happy to hear from you. </p> */}
                 <p className="text-lg ">ahmedattia1520@gmail.com</p>
               </motion.a>
 
-              <motion.div
+              <motion.div {...fadeUp(0.3)}
                 className={`card1 relative group overflow-hidden border rounded-3xl  shadow-xl  flex flex-col items-center   gap-4 p-5
                 ${activeCard == 2 ? "text-white" : "text-black"}`}
                 onMouseEnter={() => setactiveCard(2)}
@@ -56,7 +55,7 @@ I'd be happy to hear from you. </p> */}
                 <h4 className="text-2xl font-semibold">Loction</h4>
                 <p className="text-lg"> Cairo , Egypt</p>
               </motion.div>
-              <motion.a
+              <motion.a {...fadeUp(0.4)}
                 href="https://www.linkedin.com/in/ahmed-3ttia-/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +70,7 @@ I'd be happy to hear from you. </p> */}
                 <h4 className="text-2xl font-semibold">LinkedIn</h4>
                 <p className="text-lg"> www.linkedin.com/in/ahmed-3ttia-</p>
               </motion.a>
-              <motion.a
+              <motion.a {...fadeUp(0.5)}
                 href="https://wa.me/201024365443"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -94,7 +93,7 @@ I'd be happy to hear from you. </p> */}
 
           <motion.div className="c-form h-full">
             <h3 className="text-center text-2xl font- text-muted-foreground lg:pt-10">
-              Drop us a message below 
+              Drop me a message below 
                </h3>
             <ContactForm />
           </motion.div>

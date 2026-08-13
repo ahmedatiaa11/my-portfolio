@@ -6,6 +6,8 @@ import { Input } from "../../Components/Ui/input";
 import { Textarea } from "../../Components/Ui/textarea";
 import { Button } from "../../Components/Ui/button";
 import { useContact } from "../../Hooks/useContact";
+import { fadeUp } from "../../animations/FadeUp";
+import { motion } from "framer-motion";
 // type formInputes ={
 //   name : string ,
 //   email :string ,
@@ -48,8 +50,9 @@ export default function ContactForm() {
         
     })
   }
+  motion
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} 
+    <motion.form onSubmit={form.handleSubmit(onSubmit)} {...fadeUp(0.2)}
     className=" bg-primary/5 space-y-6 h- p-10 mt-5  rounded-2xl border shadow-2xl flex flex-col items-cente gap-10">
       {/* <h3> Submit message </h3> */}
       <Controller
@@ -93,6 +96,6 @@ export default function ContactForm() {
         ">
           Send Message
         </Button>
-    </form>
+    </motion.form>
   )
 }
