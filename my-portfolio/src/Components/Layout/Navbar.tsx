@@ -9,24 +9,31 @@ import MobileMenue from "./MobileMenue";
 import { Button } from "@base-ui/react";
 import myCv from "../../../public/Ahmed_Abdelmonim_CV.pdf";
 import { fadeRight } from "../../animations/FadeRigth";
+import logo from "../../../imgs/Ahmed 3T .png"
 
 export default function Navbar() {
   const isScroll = useNavbarScroll(30);
   return (
     <header
-      className={`w-full  sticky top-0 z-50 transition-all duration-300 ${
+      className={`w-full overflow-hidden  sticky top-0 z-50 transition-all duration-300 ${
         isScroll ? "bg-background/60 backdrop-blur-sm shadow-md border-b  " : ""
       } `}
     >
       <Container>
         <nav className="   flex  justify-between items-center h-15">
+          {/* <img src={logo} alt="" className="w-50 h-20 p-1" />  */}
 
           <motion.h1
             {...FadeLeft(0.3)}
             className="text-2xl font-bold tracking-tight hover:scale-105 duration-300 transition-all"
           >
-            Ahmed Portfolio
-          </motion.h1>
+            <div className="text-3xl relative">
+              <span className=" " >Ahmed </span>
+              <span className="text-cyan-700">Attia</span>
+            </div>
+            {/* <span className="absolute text-muted-foreground text-sm bottom-0">Frontend Developer</span> */}
+
+                    </motion.h1>
 
           {/* Ullllllllllllllllllllllll */}
           <motion.ul
