@@ -40,7 +40,7 @@ export default function Navbar() {
             {...fadeUp(0.3)}
             className=" items-center md:text-lg lg:text-xl
           gap-4  lg:gap-7 
-          hidden lg:flex 
+          hidden lg:flex
           "
           >
             <li className=" hover:bg-gray-300 duration-300 transition-all hover: rounded-2xl px-2 block">
