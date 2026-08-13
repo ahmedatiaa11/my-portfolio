@@ -9,7 +9,7 @@ import MobileMenue from "./MobileMenue";
 import { Button } from "@base-ui/react";
 import myCv from "../../../public/Ahmed_Abdelmonim_CV.pdf";
 import { fadeRight } from "../../animations/FadeRigth";
-import logo from "../../../imgs/Ahmed 3T .png"
+// import logo from "../../../imgs/Ahmed 3T .png"
 
 export default function Navbar() {
   const isScroll = useNavbarScroll(30);
