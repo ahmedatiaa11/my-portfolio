@@ -7,8 +7,8 @@ import RightContent from "./RigthContent";
 import { motion } from "framer-motion";
 // import heroImg from "../../../imgs/emile-perron-xrVDYZRGdw4-unsplash.jpg";
 // import heroImg from "../../../imgs/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg";
-// import heroImg from "../../../imgs/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg";
-import heroImg from "../../../imgs/james-harrison-vpOeXr5wmR4-unsplash.jpg";
+import heroImg from "../../../imgs/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg";
+// import heroImg from "../../../imgs/james-harrison-vpOeXr5wmR4-unsplash.jpg";
 
 
 
@@ -73,7 +73,6 @@ export default function Hero() {
                   className="p-5 mb- text-lg rounded-full shadow-lg  
                   hover:scale-105 transition-all duration-300
                   text-black
-                  
                   "
                 >
                   <a href="#contact">Contact Me</a>
