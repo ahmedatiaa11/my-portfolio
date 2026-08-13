@@ -24,7 +24,7 @@ export default function Navbar() {
           {/* <img src={logo} alt="" className="w-50 h-20 p-1" />  */}
 
           <motion.h1
-            {...FadeLeft(0.3)}
+            {...FadeLeft(0)}
             className="text-2xl font-bold tracking-tight hover:scale-105 duration-300 transition-all"
           >
             <div className="text-3xl relative">
