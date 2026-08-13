@@ -88,7 +88,7 @@ export default function ContactForm() {
           </Field>
         )}
       />
-        <Button type="submit" className="w-full py-6 text-lg font-semibold
+        <Button type="submit" className="w-full py-6 text-lg font-semibold bg-cyan-800
         
         ">
           Send Message

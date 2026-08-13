@@ -14,7 +14,7 @@ import { Eye } from "lucide-react";
 
 export default function Projects() {
   return (
-    <motion.section className="py-20">
+    <motion.section className="py-20" id="projects">
       <Container>
         <motion.div className=" header flex flex-col items-center gap-2">
           <motion.h2 className="text-5xl font-bold">Projects</motion.h2>
