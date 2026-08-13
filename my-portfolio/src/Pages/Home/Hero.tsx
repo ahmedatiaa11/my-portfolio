@@ -7,8 +7,8 @@ import RightContent from "./RigthContent";
 import { motion } from "framer-motion";
 // import heroImg from "../../../imgs/emile-perron-xrVDYZRGdw4-unsplash.jpg";
 // import heroImg from "../../../imgs/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg";
-import heroImg from "../../../imgs/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg";
-// import heroImg from "../../../imgs/james-harrison-vpOeXr5wmR4-unsplash.jpg";
+// import heroImg from "../../../imgs/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg";
+import heroImg from "../../../imgs/james-harrison-vpOeXr5wmR4-unsplash.jpg";
 
 
 
@@ -20,7 +20,7 @@ export default function Hero() {
       >
         {/* Image */}
         <div className=" inset-0 -z-10 absolute  ">
-          <img src={heroImg} alt="" className="object-cover w-full h-full brightness-80 blur-[2px]" />
+          <img src={heroImg} alt="" className="object-cover w-full h-full brightness-90 blur-[0.5px]" />
         </div>
         {/* OverLay */}
         <div className="absolute inset-0 -z-3 bg-black/60" />
