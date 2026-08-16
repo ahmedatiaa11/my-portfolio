@@ -52,7 +52,7 @@ export default function Hero() {
               </motion.h2>
 
               <motion.p
-                {...fadeUp(0.8)}
+                {...fadeUp(0.6)}
                 className=" text-white/80  mx-auto max-w-lg text-based sm:text-lg leading-7 sm:leading- text-lg"
               >
                 I build fast, responsive, and modern web applications using
@@ -62,7 +62,7 @@ export default function Hero() {
 
               <motion.div
                 className="  mt-8 flex flex-col sm:justify-center sm:flex-row items-center gap-2 sm:gap-3 lg:gap-4"
-                {...fadeUp(1)}
+                {...fadeUp(0.2)}
               >
                 <Button variant="outline" className=" bg-white text-black p-5 text-lg rounded-full hover:scale-105 transition-all duration-300">
                   <a href="#projects">View Projects</a>
