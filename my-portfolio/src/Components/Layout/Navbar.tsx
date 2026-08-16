@@ -91,7 +91,8 @@ export default function Navbar() {
                 download="AHMED-ATTIA-CV.pdf"
                 className="flex   justify-center gap-2  items-center w-full "
               >
-                <ArrowDownToLine className="h-5 w-5 group-hover:rotate-360 group-hover:text-cyan-600 transition-all duration-500" /> <span>Download CV</span>
+                <ArrowDownToLine className="h-5 w-5 group-hover:rotate-360 group-hover:text-cyan-600 transition-all duration-500" /> 
+                <span className="text-lg">Download CV</span>
               </a>
             </Button>
           </motion.div>

@@ -16,7 +16,7 @@ import heroImg from "../../../imgs/james-harrison-vpOeXr5wmR4-unsplash.jpg";
 export default function Hero() {
   return (
     <>
-      <motion.section id="home" className="overflow-hidde relative pb-10 lg:pb-0"
+      <motion.section id="home" className="overflow-hidde relative pb-10 lg:pb-0 scroll-mt-15"
       >
         {/* Image */}
         <div className=" inset-0 -z-10 absolute  ">
@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="absolute inset-0 -z-3 bg-black/60" />
         {/* Content */}
         <Container>
-          <div className="  grid min-h-[calc(100vh-60px)] grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2">
+          <div className="  grid min-h-[calc(100vh-60px)]  grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2">
             {/* left sideeeeeeee */}
             <div
               className="text-white space-y-6 order-2 lg:order-1

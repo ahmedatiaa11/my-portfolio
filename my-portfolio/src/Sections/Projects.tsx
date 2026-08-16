@@ -8,9 +8,8 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { Button } from "../Components/Ui/button";
-import EcommerceImg from "../../imgs/Screenshot 2026-08-05 121658.png"
+import EcommerceImg from "../../imgs/ecommerceImg.png";
 import { Eye } from "lucide-react";
-
 
 export default function Projects() {
   return (
@@ -23,8 +22,7 @@ export default function Projects() {
           </motion.p>
         </motion.div>
         <motion.div className=" projects-cards grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-         
-         <motion.div
+          <motion.div
             className="card-1 cursor-pointer group space-y-3.5  flex flex-col gap- rounded-2xl border border-black/12 p-5 shadow-lg 
             overflow-hidden transition-all duration-300
                 hover:shadow-2xl hover:-translate-y-1 hover:border-black/20 "
@@ -33,14 +31,20 @@ export default function Projects() {
               <motion.img
                 src={EcommerceImg}
                 className="w-full  h-full object-cover group-hover:scale-105 transition-all duration-500  "
-              ></motion.img>
+              >
+                {/* <a href="https://ecommerce-theta-gilt-88.vercel.app/products/3"></a> */}
+              </motion.img>
 
               <div className=" absolute inset-0 bg-black/50 opacity-0 transition-all group-hover:opacity-100 duration-300 "></div>
-              <div className=" absolute inset-0 transition-all duration-300 flex justify-center items-center 
-              opacity-0 group-hover:opacity-100 text-white gap-1.5 text-xl" >
-                <Eye/>
+              <a href="https://ecommerce-theta-gilt-88.vercel.app/products"
+              target="_blank">
+              <div
+                className=" absolute inset-0 transition-all duration-300 flex justify-center items-center 
+              opacity-0 group-hover:opacity-100 text-white gap-1.5 text-xl"
+              >
+                <Eye />
                 <span> View Project</span>
-              </div>
+              </div></a>
             </div>
 
             <h3 className=" text-lg font-semibold"> E-Commerce Platform </h3>
@@ -70,10 +74,17 @@ export default function Projects() {
                 <FaGithub className="h-5 w-5" />
                 GitHub
               </Button>
-              <Button className="flex-1" disabled> Live Demo</Button>
+              <Button className="flex-1">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ecommerce-theta-gilt-88.vercel.app/products"
+                >
+                  Live demo
+                </a>
+              </Button>
             </div>
           </motion.div>
-
         </motion.div>
       </Container>
     </motion.section>

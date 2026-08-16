@@ -13,13 +13,13 @@ export default function Footer() {
 
           </div>
 
-        <ul className=" flex flex-col gap-1 text-lg ">
+        <ul className=" flex lg:flex-col gap-3 lg:gap-2 text-lg ">
           <li className="hover:text-cyan-500 hover: transition-all duration-200   rounded-2xl "> <a  href="#home">Home</a></li>
           <li className="hover:text-cyan-500 hover: transition-all duration-200   rounded-2xl "> <a  href="#about">About</a></li>
           <li className="hover:text-cyan-500 hover: transition-all duration-200   rounded-2xl "> <a href="#projects">Projects</a></li>
           <li className="hover:text-cyan-500 hover: transition-all duration-200   rounded-2xl "> <a href="#contact">Contact</a></li>
         </ul>
-        <div className="social links flex flex-col gap-5 ">
+        <div className="social links flex lg:flex-col gap-5 ">
           <a
           target="_blank" 
           rel="noopener noreferrer"
