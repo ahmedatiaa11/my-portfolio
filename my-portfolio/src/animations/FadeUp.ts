@@ -10,7 +10,7 @@ export const fadeUp = (delay:number) => ({
     } ,
     viewport:{
         once :false ,
-        amount: 0.2,
+        amount: 0.1,
 
     } ,
     transition:{
